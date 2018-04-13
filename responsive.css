@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+.welcome-screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+}
+
+.beginQuiz {
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+p.correctMessage {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.container-4 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #FDF3E7;
+}
+
+.questionNumber {
+  justify-content: space-between;
+  flex: 10;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  height: 40px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  display: none;
+}
+
+.button-next-question, .button-retake-quiz {
+  min-width: 350px;
+  height: 40px;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+.containerNextQuestion {
+  Width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mustacheHolder {
+  display: flex;
+  min-height: 130px;
+  justify-content: center;
+}
+
+#mustacheImg {
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#invisibleImg {
+  justify-content: center;
+  opacity: 0;
+  max-width: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+  Padding: 2px;
+}
+
+.questionNumber {
+  text-align: left;
+  flex: 3;
+}
+
+.quizBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*fullscreen*/
+
+@media screen and ( min-width: 420px) and (min-height: 200px) {
+  body {
+    background-color: #C63D0F;
+  }
+  .container {
+    margin: 20px auto;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    min-height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #FDF3E7;
+  }
+  p {
+    font-size: 25px;
+  }
+  .questionNumber, #gameScore {
+    font-size: 4vmin;
+    color: #C63D0F;
+    font-weight: bolder;
+  }
+  .container-1 {
+    display: flex;
+    /*width: 100%;*/
+    flex-flow: row wrap;
+  }
+  .containerButtons {
+    display: flex;
+    justify-content: center;
+  }
+  .button {
+    width: 48%;
+    min-width: 175px;
+    height: 20%;
+    min-height: 60px;
+    margin: 0 auto;
+  }
+  #mustacheImg {
+    width: auto;
+    max-height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .container-4 {
+    fontsize: 5px;
+  }
+}
+
+/*iphone4*/
+
+@media screen and ( max-width: 350px) and ( max-height: 500px) {
+  .containerButtons {
+    display: flex;
+    justify-content: center;
+  }
+  .container-1 {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .button {
+    width: 48%;
+    height: 30px;
+    margin: 2px 2px;
+    font-size: 15px;
+  }
+  .button-next-question, .button-retake-quiz {
+    min-width: 150px;
+    min-height: 40px;
+    width: 100%;
+    max-width: 60px;
+    margin: 0 auto;
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+  .questionNumber, #gameScore {
+    font-size: 5vmin;
+    color: #DF042D;
+    font-weight: bolder;
+  }
+  .container-4 {
+    width: 100%;
+  }
+  p.correctMessage {
+    font-size: 14px;
+  }
+  #invisibleImg {
+    width: 100px;
+  }
+}

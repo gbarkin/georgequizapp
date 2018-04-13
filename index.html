@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Quiz App</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <span id="correctAnswer"></span>
+    <header>Mustache Quiz App</header>
+    <div class="container-3">
+      <span class="questionNumber"></span>
+      <span id="gameScore"></span>
+    </div>
+    <div class="welcome-screen">
+      <h2 class="quiz-rules">Welcome!</h2>
+      <p class="quiz-rules">You will be asked 10 questions to test your knowledge of famous actors and their famous mustaches.</p>
+      <input type="button" class="beginQuiz buttonStandards" value="Start Quiz">
+    </div>
+
+    <div class="mustacheHolder">
+      <img id="invisibleImg" />
+      <img id="mustacheImg" />
+    </div>
+    <form>
+
+      <fieldset>
+        <div class="quizBox">
+          <p id="quizQuestion">Question</p>
+        </div>
+        <div class="container-4">
+          <p class="correctMessage"></p>
+        </div>
+        <div class="containerNextQuestion">
+          <input type="button" class="buttonStandards button-next-question" value="Next Question">
+          <input type="button" class="buttonStandards button-retake-quiz" value="Retake Quiz">
+        </div>
+
+        <legend id="answerChoices"></legend>
+        <input type="submit" class="button buttonStandards" id="answerA" value=" ">
+        <input type="submit" class="button buttonStandards" id="answerB" value=" ">
+        <input type="submit" class="button buttonStandards" id="answerC" value=" ">
+        <input type="submit" class="button buttonStandards" id="answerD" value=" ">
+      </fieldset>
+
+      <!--</div>-->
+    </form>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
